@@ -1,7 +1,7 @@
 // creare un bottone che genera una griglia di gioco quadrata
 const  gridElement = document.getElementById('grid');
 const  playButton = document.getElementById('play');
-generateGrid(gridElement)
+
 
 playButton.addEventListener('click', function () {
     generateGrid(gridElement);
@@ -18,7 +18,7 @@ function generateGrid(container) {
 function generateCell()  {
     const cella = document.createElement('div');
     cella.classList.add('cella');
-    
+
     // Per ogni cella cliccata, essa diventa colore azzurro
     cella.addEventListener('click', function() {
         cella.classList.toggle('cellacolorata'); 
