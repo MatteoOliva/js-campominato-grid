@@ -44,8 +44,8 @@ footer p {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    display: none;
 }
+
 .celle {
     width: calc(100% / 10);
     height: calc(100% / 10);
