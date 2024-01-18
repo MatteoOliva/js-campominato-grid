@@ -38,7 +38,7 @@ footer p {
     font-size: 20px;
 }
 #grid {
-    border: 1px solid black;
+    
     width: 700px;
     height: 700px;
     margin: auto;
@@ -47,9 +47,13 @@ footer p {
     
 }
 
-.celle {
+.cella {
     width: calc(100% / 10);
     height: calc(100% / 10);
-    border: 1px solid black;
+    border: 2px solid black;
     
+}
+
+.cellacolorata {
+    background-color: blue;
 }

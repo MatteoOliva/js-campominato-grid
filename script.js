@@ -1,9 +1,10 @@
 // creare un bottone che genera una griglia di gioco quadrata
 const  gridElement = document.getElementById('grid');
 const  playButton = document.getElementById('play');
-generateGrid(gridElement);
+generateGrid(gridElement)
 
 function generateGrid(container) {
+
     for (let i = 0; i < 100; i ++) {
         const cellElement = generateCell();
         container.append(cellElement);
@@ -11,9 +12,12 @@ function generateGrid(container) {
 }
 
 function generateCell()  {
-    const cell = document.createElement('div');
-    cell.classList.add('celle');
-    return cell;
+    const cella = document.createElement('div');
+    cella.classList.add('cella');
+    cella.addEventListener('click', function() {
+        cella.classList.toggle('cellacolorata');
+    })
+    return cella;
 }
 
 
