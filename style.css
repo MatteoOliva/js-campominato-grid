@@ -44,10 +44,12 @@ footer p {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .celle {
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
+    
 }
