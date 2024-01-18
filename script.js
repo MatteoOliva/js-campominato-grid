@@ -9,7 +9,7 @@ playButton.addEventListener('click', function () {
 
 function generateGrid(container) {
         container.innerHTML = '';
-    for (let i = 0; i < 100; i ++) {
+    for (let i = 1; i < 101; i ++) {
         const cellElement = generateCell(i);
         container.append(cellElement);
     }

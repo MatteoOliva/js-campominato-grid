@@ -52,6 +52,9 @@ footer p {
     height: calc(100% / 10);
     border: 2px solid black;
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cellacolorata {
