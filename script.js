@@ -58,23 +58,31 @@ function generateCell(cellNumber)  {
 
 // Step 1 migliorato
 
+let bombe = [];
 
-// let bombe = [];
-
-// while (bombe.length < 16)
-// {
-//     let number = Math.floor(Math.random() * 100 + 1 );
-//     if (!bombe.includes(number)) {
-//         bombe.push(number);
-// }
+while (bombe.length < 16)
+{
+    let number = Math.floor(Math.random() * 100 + 1 );
+    if (!bombe.includes(number)) {
+        bombe.push(number);
+}
     
+}
+console.table(bombe);
+
+
+
+// Step 2
+
+
+
+// if (bombe = cellNumber) {
+//     cella.classList.add('bombacalpestata');
+//     alert('GAME-OVER');
+// } else {
+//     cella.classList.toggle('cellacolorata');                        // stavo iniziando a lavorarci su
+
 // }
-// console.table(bombe);
-
-
-
-
-
 
 
 
