@@ -40,19 +40,37 @@ function generateCell(cellNumber)  {
 // Step 1
 
 
-// // let bombe = [];
+// let bombe = [];
 
-// // for(i = 0; i < 15; i++)
-// // {
-// //     bombe[i] = Math.floor(Math.random() * 100 + 1 );
-// //     if (bombe.includes(bombe[i])) {
+// for(i = 0; i < 15; i++)
+// {
+//     bombe[i] = Math.floor(Math.random() * 100 + 1 );
+//     if (bombe.includes(bombe[i])) {
 
     
-// //     bombe.push(i);
-// // }
+//     bombe.push(i);
+// }
     
-// // }
-// // console.table(bombe);
+// }
+// console.table(bombe);
+
+
+
+// Step 1 migliorato
+
+
+// let bombe = [];
+
+// while (bombe.length < 16)
+// {
+//     let number = Math.floor(Math.random() * 100 + 1 );
+//     if (!bombe.includes(number)) {
+//         bombe.push(number);
+// }
+    
+// }
+// console.table(bombe);
+
 
 
 
