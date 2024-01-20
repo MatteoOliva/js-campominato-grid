@@ -2,6 +2,8 @@
 const  gridElement = document.getElementById('grid');
 const  playButton = document.getElementById('play');
 
+let punteggio = 0;
+
 
 playButton.addEventListener('click', function () {
     generateGrid(gridElement);
@@ -25,18 +27,20 @@ function generateCell(cellNumber)  {
 
     // Per ogni cella cliccata, essa diventa colore azzurro
     cella.addEventListener('click', function() {
-        cella.classList.toggle('cellacolorata');
+        
 
         //stampare in console il numero della cella cliccata
         console.log(cellNumber);
 
-        //Step 2
+        //Step 2 & step 3
         if (bombe.includes(cellNumber)) {
             cella.classList.add('bombacalpestata');
-            setTimeout(function() { alert("GAME OVER"); }, 100);
-            
+
+            setTimeout(function() { alert(`GAME OVER, Hai totalizzato ${punteggio} punti`); }, 100);
+
         } else {
-            cella.classList.add('cellacolorata');                        
+            cella.classList.add('cellacolorata');
+            punteggio++;
         }
         
         
@@ -84,10 +88,6 @@ console.table(bombe);
 
 
 
-// Step 2
-//si trova dalla riga 33
-
-
-
-
+// Step 2 & Step 3
+// Alla riga 35
 
