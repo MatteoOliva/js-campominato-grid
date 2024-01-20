@@ -27,8 +27,20 @@ function generateCell(cellNumber)  {
     cella.addEventListener('click', function() {
         cella.classList.toggle('cellacolorata');
 
-        //   stampare in console il numero della cella cliccata
+        //stampare in console il numero della cella cliccata
         console.log(cellNumber);
+
+        //Step 2
+        if (bombe.includes(cellNumber)) {
+            cella.classList.add('bombacalpestata');
+            setTimeout(function() { alert("GAME OVER"); }, 100);
+            
+        } else {
+            cella.classList.add('cellacolorata');                        
+        }
+        
+        
+        
         
     })
     return cella;
@@ -73,16 +85,7 @@ console.table(bombe);
 
 
 // Step 2
-
-
-
-// if (bombe = cellNumber) {
-//     cella.classList.add('bombacalpestata');
-//     alert('GAME-OVER');
-// } else {
-//     cella.classList.toggle('cellacolorata');                        // stavo iniziando a lavorarci su
-
-// }
+//si trova dalla riga 33
 
 
 
